@@ -12,11 +12,27 @@
 
     <main>
         <section class="hero">
-            <div class="container">
+            <div class="hero-content">
                 <h2>Bienvenidos al Sitio Oficial de Fans de The Beatles</h2>
                 <p>Explora la magia y el legado de The Beatles, una de las bandas más icónicas y trascendentales en la historia de la música. Desde sus inicios en Liverpool hasta su fama mundial, descubre cada aspecto de la banda a través de nuestras secciones dedicadas.</p>
             </div>
+            <picture class="hero-picture">
+                <source srcset="
+                assets/images/banda-1600.jpg?as=webp&width=800 800w,
+                assets/images/banda-1600.jpg?as=webp&width=1200 1200w,
+                assets/images/banda-1600.jpg?as=webp&width=1600 1600w"
+                sizes="(max-width: 600px) 100vw, (max-width: 900px) 75vw, (max-width: 1200px) 100vw, 100vw"
+                type="image/webp">
+                <source srcset="
+                assets/images/banda-1600.jpg?width=800 800w,
+                assets/images/banda-1600.jpg?width=1200 1200w,
+                assets/images/banda-1600.jpg?width=1600 1600w"
+                sizes="(max-width: 600px) 100vw, (max-width: 900px) 75vw, (max-width: 1200px) 100vw, 100vw"
+                type="image/jpeg">
+                <img src="assets/images/banda-1600.jpg" alt="The Beatles" class="hero-background">
+            </picture>
         </section>
+
         <section class="index-intro">
             <div class="container">
                 <h2><i class="fas fa-music"></i> Descubre The Beatles</h2>
@@ -26,21 +42,63 @@
         <section class="featured-content">
             <div class="container-grid">
                 <div class="card">
-                    <img src="assets/images/rubber.jpg" alt="Abbey Road Album Cover">
+                    
+                    <picture>
+                        <source srcset="
+                            assets/images/rubber.png?as=webp&width=500 1x,
+                            assets/images/rubber.png?as=webp&width=700 2x,
+                            assets/images/rubber.png?as=webp&width=900 3x" 
+                            type="image/webp">
+                        <source srcset="
+                            assets/images/rubber.png?width=500 1x,
+                            assets/images/rubber.png?width=700 2x,
+                            assets/images/rubber.png?width=900 3x" 
+                            type="image/png">
+                        <img src="assets/images/rubber.png" alt="Rubber Soul Album">
+                    </picture>              
+                    
                     <h3><i class="fas fa-list"></i> Explora las Categorías</h3>
                     <p>Bienvenidos a la sección de categorías de nuestro sitio dedicado a The Beatles. Aquí encontrarás una colección diversa y enriquecedora de contenidos que te permitirá conocer en profundidad a esta icónica banda. Desde anécdotas poco conocidas hasta análisis detallados de sus más grandes hits, cada categoría te sumerge más en el mundo de The Beatles.</p>
                     <div class="container-centered"><a href="category.html" class="button-link"><i class="fas fa-chevron-circle-right"></i> Ver más</a></div>
 
                 </div>
                 <div class="card">
-                    <img src="assets/images/abbey.jpg" alt="The Beatles Group Photo">
+
+                    <picture>
+                        <source srcset="
+                            assets/images/abbey.png?as=webp&width=500 1x,
+                            assets/images/abbey.png?as=webp&width=700 2x,
+                            assets/images/abbey.png?as=webp&width=900 3x" 
+                            type="image/webp">
+                        <source srcset="
+                            assets/images/abbey.png?width=500 1x,
+                            assets/images/abbey.png?width=700 2x,
+                            assets/images/abbey.png?width=900 3x" 
+                            type="image/png">
+                        <img src="assets/images/abbey.png" alt="Abbey Road Album">
+                    </picture>   
+                    
                     <h3><i class="fas fa-info-circle"></i> Presentación de The Beatles Fan Site</h3>
                     <p>Bienvenidos al sitio oficial de fans de The Beatles, un espacio dedicado a explorar y celebrar la historia y el legado de una de las bandas más influyentes de la música moderna. Aquí no solo descubrirás la discografía completa de la banda, sino que también podrás sumergirte en anécdotas, eventos históricos y el impacto cultural que The Beatles han tenido en el mundo entero.</p>
                     <div class="container-centered"><a href="about.html" class="button-link"><i class="fas fa-chevron-circle-right"></i> Ver más</a></div>
 
                 </div>
                 <div class="card">
-                    <img src="assets/images/pepper.jpg" alt="The Beatles in Studio">
+
+                    <picture>
+                        <source srcset="
+                            assets/images/pepper.png?as=webp&width=500 1x,
+                            assets/images/pepper.png?as=webp&width=700 2x,
+                            assets/images/pepper.png?as=webp&width=900 3x" 
+                            type="image/webp">
+                        <source srcset="
+                            assets/images/pepper.png?width=500 1x,
+                            assets/images/pepper.png?width=700 2x,
+                            assets/images/pepper.png?width=900 3x" 
+                            type="image/png">
+                        <img src="assets/images/pepper.png" alt="Sgt. Pepper's Lonely Hearts Club Band Album">
+                    </picture> 
+                    
                     <h3><i class="fas fa-book-open"></i> Referencias y Atribuciones</h3>
                     <p>Esta página proporciona detalles sobre las fuentes de contenido utilizadas en todo este sitio, incluyendo enlaces directos a dichas fuentes y la atribución de derechos de autor y derechos donde corresponda.</p>
                     <div class="container-centered"><a href="links.html" class="button-link"><i class="fas fa-chevron-circle-right"></i> Ver más</a></div>
@@ -51,6 +109,5 @@
     </main>
     <include src="components/footer.html"></include>
     <script src="scripts/main.js"></script>
-
 </body>
 </html>

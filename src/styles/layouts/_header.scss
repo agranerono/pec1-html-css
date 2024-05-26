@@ -1,0 +1,55 @@
+.site-header {
+    background: $primary-color;
+    color: $secondary-color;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+
+    .title-logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        .logo {
+            width: 50px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        h1 {
+            font-family: $header-font;
+            font-size: 2.5em;
+            margin: 0;
+            font-weight: normal;
+        }
+    }
+
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        margin: 20px 0 0;
+        padding: 0;
+
+        li {
+            margin: 0 15px;
+
+            a {
+                color: $secondary-color;
+                text-decoration: none;
+                font-weight: bold;
+
+                &:hover, &:focus {
+                    color: $accent-color;
+                    text-decoration: underline;
+                }
+            }
+
+            @media (max-width: 768px) {
+                .fa, .fas, .far, .fab {
+                    display: none;
+                }
+            }
+        }
+    }
+}

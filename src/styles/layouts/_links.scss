@@ -1,0 +1,71 @@
+.sources, .attributions, .ai-acknowledgment{
+    padding: 30px 20px;
+    background: $background-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    h3 {
+        font-family: $header-font;
+        color: $primary-color;
+        font-size: 1.75em;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        font-family: $header-font;
+        color: $primary-color;
+        font-size: 2em;
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+
+    p, ul {
+        color: darken($primary-color, 10%);
+        font-family: $base-font;
+        text-align: justify;
+        list-style-type: none;
+    }
+
+    li {
+        text-align: left;
+        position: relative; 
+        margin-bottom: 10px;
+        padding-left: 20px; 
+        &:before {
+            content: ""; 
+            position: absolute; 
+            left: 0; 
+            top: 50%; 
+            width: 3px; 
+            height: 20px; 
+            background-color: $primary-color; 
+            transform: translateY(-50%); 
+        }
+        @media (max-width: 768px) {
+            padding-left: 0px; 
+            &:before {
+                content: none;
+            }
+        }
+    }   
+
+    a {
+        color: $link-color;
+        text-decoration: none;
+        font-weight: bold; 
+        &:hover {
+            text-decoration: underline;
+            color: $button-hover-color;
+        }
+    }
+
+    img {
+        max-width: 100%; 
+        height: auto;    
+        max-height: 300px; 
+        width: auto;     
+        margin: 20px 0; 
+    }
+}
