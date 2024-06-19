@@ -45,7 +45,7 @@
                                 assets/images/field.jpg?width=800 2x,
                                 assets/images/field.jpg?width=900 3x" 
                                 type="image/jpeg">
-                            <img src="assets/images/field.jpg" alt="The Beatles Live Performance">
+                            <img src="assets/images/field.jpg" alt="The Beatles Live Performance" loading="lazy">
                         </picture>
 
                         <picture>
@@ -59,7 +59,7 @@
                                 assets/images/road.jpg?width=800 2x,
                                 assets/images/road.jpg?width=900 3x" 
                                 type="image/jpeg">
-                            <img src="assets/images/road.jpg" alt="The Beatles Live Performance">
+                            <img src="assets/images/road.jpg" alt="The Beatles Live Performance" loading="lazy">
                         </picture>
 
                     </div>
@@ -80,7 +80,7 @@
                                 assets/images/pls.png?width=700 2x,
                                 assets/images/pls.png?width=900 3x" 
                                 type="image/png">
-                            <img src="assets/images/pls.png" alt="Please Please Me Album">
+                            <img src="assets/images/pls.png" alt="Please Please Me Album" loading="lazy">
                         </picture>  
 
                         <picture>
@@ -94,7 +94,7 @@
                                 assets/images/let.png?width=700 2x,
                                 assets/images/let.png?width=900 3x" 
                                 type="image/png">
-                            <img src="assets/images/let.png" alt="Let It Be Album">
+                            <img src="assets/images/let.png" alt="Let It Be Album" loading="lazy">
                         </picture>  
                         
                     </div>
@@ -104,14 +104,23 @@
                     <p>El legado de The Beatles trasciende la música. Fueron pioneros en muchos aspectos, desde su enfoque en álbumes conceptuales hasta su influencia en la moda y el cine. En esta sección, examinamos cómo su influencia se extiende hasta la actualidad, impactando no solo a músicos y artistas sino también a culturas en todo el mundo. A través de entrevistas, artículos especiales y colaboraciones exclusivas, destacamos cómo The Beatles siguen siendo relevantes en el panorama cultural moderno.</p>
 
                     <p>Invitamos a todos los visitantes a explorar este sitio, descubrir contenido único y compartir su pasión por The Beatles con una comunidad de fans igualmente dedicados. Ya sea que seas un fanático de largo tiempo o un nuevo admirador, aquí encontrarás algo para profundizar tu aprecio y entendimiento de The Fab Four.</p>
-                    <iframe src="https://www.youtube.com/embed/KQetemT1sWc"></iframe>
 
+                    <div class="youtube-container" onclick="loadYoutubeVideo()">
+                        <img src="https://img.youtube.com/vi/KQetemT1sWc/hqdefault.jpg" alt="Video de The Beatles" class="youtube-thumbnail">
+                        <div class="play-button">
+                            <svg viewBox="0 0 200 200" alt="Play video">
+                                <polygon points="70, 55 70, 145 145, 100" class="play-icon"></polygon>
+                            </svg>
+                        </div>
+                    </div>
+                    
                 </article>
             </div>
         </div>
     </main>
 
     <include src="components/footer.html"></include>
-    <script src="scripts/main.js"></script>
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/video.js" defer></script>
 </body>
 </html>
